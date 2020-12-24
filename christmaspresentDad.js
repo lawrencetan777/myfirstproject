@@ -1,5 +1,3 @@
-const { RSA_X931_PADDING } = require("constants");
-const { resolve } = require("path");
 const readline = require("readline");
 
 const rl = readline.createInterface({
