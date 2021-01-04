@@ -25,7 +25,7 @@ var people = await ask("How many people live with you?  ");
 parseInt(people);
 if (people<2) {
 console.log("Your household is too small for us");
-console.log("Bye!!!!")
+console.log("Bye!!!")
 rl.close();
 }
 else if (people> 10) {
