@@ -16,9 +16,12 @@ async function ask(question) {
 async function r (){
 var quizzer = await ask("What's your name? ");
  console.log("Hello, " + quizzer)
+ console.log ("**RULES**")
+ console.log ("Answer the questions! (obviously)")
+ console.log ("For number questions, answer with a number, not word form (e.g. 1, not one)")
 
 
-var people = await ask("How many people live with you? (This is going to mess up if you don't put a number like 1,2,3,4 instead of one, two...) ");
+var people = await ask("How many people live with you?  ");
 parseInt(people);
 if (people<2) {
 console.log("Your household is too small for us");
@@ -32,6 +35,18 @@ rl.close();
 }
 else{
     console.log("Anyone is free to add questions")
+}
+
+var age = await ask("How old are you? ")
+if (age<9) {
+    console.log ("You're too young!");
+    console.log("Bye!!!!")
+rl.close();
+}
+if (age>50) {
+    console.log ("You're too old!");
+    console.log("Bye!!!!")
+rl.close();
 }
 rl.close();
 }
