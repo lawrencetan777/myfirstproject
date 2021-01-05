@@ -48,6 +48,8 @@ if (age>50) {
     console.log("Bye!!!!")
 rl.close();
 }
+var color =await ask("What is your favorite color ");
+console.log(color+" is your favorite color");
 rl.close();
 }
 r();
