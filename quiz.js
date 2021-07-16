@@ -15,7 +15,8 @@ async function ask(question) {
 }
 async function r (){
 var quizzer = await ask("What's your name? ");
- console.log("Hello, " + quizzer)
+quizzer =  quizzer + "pants"
+ console.log(" Your silly nickname is " + quizzer)
  console.log ("**RULES**")
  console.log ("Answer the questions! (obviously)")
  console.log ("For number questions, answer with a number, not word form (e.g. 1, not one)")
