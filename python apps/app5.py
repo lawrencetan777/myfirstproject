@@ -33,14 +33,3 @@ def find_biggest_family(phones):
     print(familybig)
 
 find_biggest_family(phone_book)
-    
-    
-
-
-    
-
-    
-
-# family is a list or set containing "John Doe" and "Log Chop"
-
-
