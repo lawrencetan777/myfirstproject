@@ -1,7 +1,7 @@
 
 # Problem 2 : Convert roman numeral to integer XVI
 
-def conversionmachine(expression):
+def conversionmachine(expression , operator ,  expression2):
     lookup = {
         "I" : 1,
         "V" : 5,
@@ -13,6 +13,8 @@ def conversionmachine(expression):
     }
     lastNum = 1
     arabicnum = 0
+    arabicnum2 = 0
+    lastnum2 = 1
     i  = len(expression) - 1
     while i >=0:
         num = lookup[expression[i]]
@@ -24,8 +26,30 @@ def conversionmachine(expression):
         lastNum = num
 
         i= i-1
-    return arabicnum
+    z = len(expression2) - 1
+    while z >=0:
+        num2 = lookup[expression2[z]]
+        if num2 < lastnum2:
+            arabicnum2 = arabicnum2 - num2
+        else:
+            arabicnum2 = arabicnum2 + num2
+        
+        lastnum2 = num2
 
-print(conversionmachine("LVI"))
+        z= z-1
+    
+    if operator == "+":
+        return arabicnum + arabicnum2
+    elif operator == "-":
+        return arabicnum - arabicnum2
+    elif operator == "*":
+        return arabicnum * arabicnum2
+    elif operator == "/":
+        return arabicnum / arabicnum2
+    else:
+        return "operator error"
+
+
+print(conversionmachine("LVI" , "+", "I"))
 
 
