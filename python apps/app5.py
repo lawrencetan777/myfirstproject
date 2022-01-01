@@ -17,7 +17,7 @@ phone_book = [
 
 def find_biggest_family(phones):
     phoneDict = {}
-    greatestfamnum = 2000
+    greatestfamnum = (10^36)
     greatestfamamount = -1
     
     for s in phones:
