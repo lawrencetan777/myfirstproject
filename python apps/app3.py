@@ -1,8 +1,8 @@
 
 
-shirt = {1:"tshirt" , 2:"longSleeves" , 3:"tuxedo",4:"polo-shirt"}
-pants = {1:"jeans", 2:"shorts", 3:"dressPants" , 4:"sweatpants"}
-shoes = {1:"sneakers", 2:"highHeels", 3:"boots" }
+shirt = {1:"t-shirt" , 2:"long sleeves" , 3:"a tuxedo",4:"a polo-shirt"}
+pants = {1:"jeans", 2:"shorts", 3:"dress pants" , 4:"sweatpants"}
+shoes = {1:"sneakers", 2:"high heels", 3:"boots" }
 import random
 def createrandomOutfit(number):
    z = 0
@@ -14,8 +14,8 @@ def createrandomOutfit(number):
      i = random.randint(1,len(shoes))
      newshoes = shoes[i]
      z = z + 1
-     print("Your new outfit is "+ newShirt +" , " + newPants + " , and "+newshoes)
+     print("Your new outfit will be "+ newShirt +", " + newPants + ", and "+newshoes)
 
    
 
-createrandomOutfit(5)
+createrandomOutfit(1)

@@ -30,3 +30,5 @@ while i < 6:
     i=i+1
 pants = dict([ ("jeans",1), ("dress-pants",2), ("sweatpants",3)])
 print(pants["jeans"])
+cakeflavor = input("What is your favorite cake flavor? ")
+print(cakeflavor)

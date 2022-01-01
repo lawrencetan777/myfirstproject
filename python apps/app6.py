@@ -50,6 +50,6 @@ def conversionmachine(expression , operator ,  expression2):
         return "operator error"
 
 
-print(conversionmachine("LVI" , "+", "I"))
+print(conversionmachine("MCMLVI" , "+", "XIX"))
 
 
