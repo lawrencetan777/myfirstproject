@@ -37,17 +37,18 @@ def conversionmachine(expression , operator ,  expression2):
         lastnum2 = num2
 
         z= z-1
-    
+    result = 0
     if operator == "+":
-        return arabicnum + arabicnum2
+        result = arabicnum + arabicnum2
     elif operator == "-":
-        return arabicnum - arabicnum2
+        result = arabicnum - arabicnum2
     elif operator == "*":
-        return arabicnum * arabicnum2
+        result = arabicnum * arabicnum2
     elif operator == "/":
-        return arabicnum / arabicnum2
+        result = arabicnum / arabicnum2
     else:
-        return "operator error"
+        result = "operator error"
+    return result
 
 
 print(conversionmachine("MCMLVI" , "+", "XIX"))

@@ -1,6 +1,6 @@
 
 
-z = [3,75,8493,-56,56]
+z = [556,75,8493,-56,56]
 
 def sortalist(list):
  sorted_list = []
@@ -8,16 +8,15 @@ def sortalist(list):
  smallestindex = 0
  index  = 0
  
- smallest = 55555556554544
+ smallest = 999999999999999999999999999999
  while len(list) != 0:
     index=0
-    smallest = 55555556554544
+    smallest = 99999999999999999999999
     for a in list:
         if smallest > a:
             smallest = a
             smallestindex = index
         index = index + 1
-    print(str(smallestindex))
     r = list.pop(smallestindex)
     sorted_list.insert(p,r)
     p = p + 1
