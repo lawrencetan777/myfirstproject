@@ -1,6 +1,8 @@
+import math
 
 
-z = [556,75,8493,-56,56]
+z = [23,12,34,31,31]
+
 
 def sortalist(list):
  sorted_list = []
@@ -22,9 +24,43 @@ def sortalist(list):
     p = p + 1
 
 
- print(sorted_list)
+ return sorted_list
 
  
+def central_tendency(data, type):
+    sum = 0
+    newdata = sortalist(data)
+    if (type == "mean"):
+        for z in newdata:
+            sum = sum+ z
+        return sum / len(newdata)
+    
+    
+    if (type == "mode"):
+        possmode  = 0
+        amountofmode = 0
+        
+        for f in newdata:
+            d = newdata.count(f)
+            if d > amountofmode:
+                amountofmode = d
+                possmode = f
+        return possmode
+
+    if (type == "median"):
+        median = 0
+        if (len(newdata) % 2 != 0):
+            median = newdata[math.ceil(len(newdata)/2)]
+        else:
+            median = central_tendency([newdata[len(newdata)/2+1],newdata[len(newdata)/2 -1]],"mean")
+        return median
+
+
+             
+
+
+
     
 
-sortalist(z)
+print(central_tendency(z, "median"))
+       
