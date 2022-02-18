@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html>
+        <body>
+
+
+        </body>
+
+        <script src="p5.js"></script>
+        <script>
+            function setup(){
+            createCanvas(400,400);
+            background(123,234,156);
+            
+            
+            x =2;
+
+            }
+            function draw(){
+                background(random(255),random(255),random(255))
+                square(300,100,x)
+                circle (200,200,x)
+                if (x < 200){
+                    x++
+                } else {
+                    x = 2
+                }
+
+            }
+        </script>
+    </html>
