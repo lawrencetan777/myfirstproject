@@ -8,23 +8,68 @@
         <script src="p5.js"></script>
         <script>
             function setup(){
-            createCanvas(400,400);
-            background(123,234,156);
-            
-            
-            x =2;
-
-            }
-            function draw(){
-                background(random(255),random(255),random(255))
-                square(300,100,x)
-                circle (200,200,x)
-                if (x < 200){
-                    x++
-                } else {
-                    x = 2
+                createCanvas(windowWidth,windowHeight);
+                background(123,234,156);
+                x = windowWidth/2
+                xs = []
+                bounces = 0
+                ys = []
+                deltaxs = []
+                deltays = []
+                for (i=0;i<1;i++){
+                    xs.push(x);
+                    ys.push(200);
+                    deltaxs.push(random(1,10));
+                    deltays.push(random(1,10));
                 }
+                textSize(200)
+            }
 
+            function draw(){
+                background(123,234,156)
+                for (i=0;i<xs.length;i++){
+                                 
+                    x = xs[i];
+                    y = ys[i];
+                    xincrement = deltaxs[i];
+                    yincrement = deltays[i];
+                    rect(20,mouseY,10,200)
+                    circle(x,y,15);
+
+                    if (x > windowWidth - 15){
+                        xincrement = -xincrement
+                        bounces++
+                    }
+                    if (x < 25){
+                        if (y< mouseY && y > mouseY - 200){
+                            xincrement = -xincrement
+                        }
+                        else {
+                            text("game over",400,400)
+                            textSize(20)
+                            text("your score was: " + bounces, 200,200)
+                            break;
+                        }
+                        bounces++
+                    }
+                    if (y > windowHeight - 15){
+                        yincrement = -yincrement
+                        bounces++
+                    }
+                    if (y < 15){
+                        yincrement = -yincrement
+                        bounces++
+                    }
+
+                    y = y + yincrement;
+                    x = x + xincrement;
+
+                    deltaxs[i] = xincrement;
+                    deltays[i] = yincrement;
+                    xs[i] = x;
+                    ys[i] = y;
+                }
+                
             }
         </script>
     </html>
