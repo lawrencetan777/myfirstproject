@@ -9,6 +9,7 @@
         <script>
             function setup(){
                 createCanvas(windowWidth,windowHeight);
+                paddley = 200
                 background(123,234,156);
                 x = windowWidth/2
                 xs = []
@@ -19,10 +20,10 @@
                 for (i=0;i<1;i++){
                     xs.push(x);
                     ys.push(200);
-                    deltaxs.push(random(1,10));
+                    deltaxs.push(random(10,30));
                     deltays.push(random(1,10));
                 }
-                textSize(200)
+                
             }
 
             function draw(){
@@ -35,13 +36,26 @@
                     yincrement = deltays[i];
                     rect(20,mouseY,10,200)
                     circle(x,y,15);
+                    rect(windowWidth-50,paddley,10,200)
 
-                    if (x > windowWidth - 15){
-                        xincrement = -xincrement
+                    if(keyIsDown(UP_ARROW)){
+                        paddley = paddley-10
+                    }
+                    if(keyIsDown(DOWN_ARROW)){
+                        paddley = paddley + 10
+                    }
+                    if (x > windowWidth - 65){
+                        if ( y > paddley && y < paddley + 200){
+                            xincrement = -xincrement
+                        } else{
+                            text("game over",400,400)
+                            text("your score was: "+bounces,200,200)
+                            break;
+                        }
                         bounces++
                     }
                     if (x < 25){
-                        if (y< mouseY && y > mouseY - 200){
+                        if (y> mouseY && y < mouseY + 200){
                             xincrement = -xincrement
                         }
                         else {
@@ -69,6 +83,7 @@
                     xs[i] = x;
                     ys[i] = y;
                 }
+                
                 
             }
         </script>
