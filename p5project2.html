@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+        <body>
+
+
+        </body>
+
+        <script src="p5.js"></script>
+        <script>
+            let x1 = 0
+            let y1 =300
+            let x2 = 300
+            let y2 = 300
+            
+            let n = 0;
+            function setup(){
+                createCanvas(600,600);
+                
+                background(2,34,150)
+                quadequ(1,2,0)
+                
+            }
+
+            
+            function quadequ(quad,lin,con){
+                for(let z = 0 ;z<600;z++ ){
+                    y1 = (quad*n)+(lin * n )+ (con)
+                    x1 = n + 300
+                    n=n+ 1
+                    y2 = (quad*n)+(lin * n )+ (con)
+                    x2 = n+300;
+                    n=n+ 1;
+                    line(x1,y2,x2,y2)
+                }
+
+                
+                
+                
+                
+
+
+
+            }
+        </script>
+    </html>
