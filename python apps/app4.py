@@ -33,7 +33,7 @@ def central_tendency(data, type):
     if (type == "mean"):
         for z in newdata:
             sum = sum+ z
-        return sum / len(newdata)
+        return int(sum / len(newdata))
     
     
     if (type == "mode"):
@@ -52,7 +52,8 @@ def central_tendency(data, type):
         if (len(newdata) % 2 != 0):
             median = newdata[math.ceil(len(newdata)/2)]
         elif (len(newdata) % 2 == 0):
-            median = central_tendency([newdata[len(newdata)/2],newdata[len(newdata)/2+1]],"mean")
+            median = central_tendency([newdata[int((len(newdata)/2))],newdata[int((len(newdata)/2))+1]],"mean")
+            
         return median
 
 

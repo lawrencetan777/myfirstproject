@@ -1,4 +1,4 @@
-package javaapps;
+
 
 class student{
     String name;

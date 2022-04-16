@@ -1,4 +1,4 @@
-package javaapps;
+
 class imbored {
 
     public static void main(String args[]){
