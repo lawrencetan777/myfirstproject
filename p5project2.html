@@ -17,17 +17,17 @@
                 createCanvas(600,600);
                 
                 background(2,34,150)
-                quadequ(1,2,0)
+                quadequ(1,-20,0)
                 
             }
 
             
             function quadequ(quad,lin,con){
-                for(let z = 0 ;z<600;z++ ){
-                    y1 = (quad*n)+(lin * n )+ (con)
+                while (n < 600){
+                    y1 = (quad*n*n)+(lin * n )+ (con)
                     x1 = n + 300
                     n=n+ 1
-                    y2 = (quad*n)+(lin * n )+ (con)
+                    y2 = (quad*n*n)+(lin * n )+ (con)
                     x2 = n+300;
                     n=n+ 1;
                     line(x1,y2,x2,y2)
