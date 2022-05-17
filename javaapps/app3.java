@@ -6,7 +6,7 @@
 
 class app3 {
     public static void main( String[] args) {
-        findFactors(931);
+        findFactors(7);
         
     }
     static void findFactors(int num){
@@ -25,10 +25,13 @@ class app3 {
         }
         
         for(int z = 0;z< factors.length;z++){
+            if (factors[0] == 1 && factors[1] == num && factors[2] == 0){
+                System.out.println("prime");
+                break;
+            }
             if (factors[z] != 0){
             System.out.println(factors[z]);
-            }
-            else{
+            }else{
             
             break;
             }
