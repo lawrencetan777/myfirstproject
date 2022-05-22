@@ -1,12 +1,8 @@
 
 
-
-
-
-
 class app3 {
     public static void main( String[] args) {
-        findFactors(7);
+        findFactors(10);
         
     }
     static void findFactors(int num){
@@ -23,6 +19,7 @@ class app3 {
 
             }
         }
+        
         
         for(int z = 0;z< factors.length;z++){
             if (factors[0] == 1 && factors[1] == num && factors[2] == 0){

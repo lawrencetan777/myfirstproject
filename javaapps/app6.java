@@ -5,6 +5,7 @@ class app6 {
         String[] res = qa(fname,lname);
         for(int x  = 0;x < res.length;x++){
             System.out.println(res[x]);
+        
         }
         
     }
