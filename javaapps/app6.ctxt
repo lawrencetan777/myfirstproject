@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=app6
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=fname\ lname
+comment2.target=java.lang.String[]\ qa(java.lang.String[],\ java.lang.String[])
+numComments=3

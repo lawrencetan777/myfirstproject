@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=app7
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=human
+comment2.target=void\ human_introduce(app7.Human)
+numComments=3

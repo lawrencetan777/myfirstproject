@@ -1,3 +1,5 @@
+package javaapps;
+
 public class app7 {
     public static void main(String[] args){
         Human aHuman =new Human("Bob", 25, "pasta");

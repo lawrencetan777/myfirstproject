@@ -1,3 +1,5 @@
+package javaapps;
+
 
 public class app10 {
     public static String[] newfunct(int limit){

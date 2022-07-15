@@ -1,3 +1,5 @@
+package javaapps;
+
 import java.util.*;
 
 public class app5 {

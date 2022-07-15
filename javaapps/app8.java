@@ -1,3 +1,5 @@
+package javaapps;
+
 // create 2d grids
 // given n and m as the dimension of the n x m grid, it returns
 // 2d array with 1 around the edges, and 0 everywhere else
