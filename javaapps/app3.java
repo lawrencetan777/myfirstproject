@@ -1,3 +1,5 @@
+package javaapps;
+
 
 
 class app3 {
@@ -15,7 +17,7 @@ class app3 {
                 n++;
                 factors[n] = num/i;
                 n++;
-                
+
 
             }
         }

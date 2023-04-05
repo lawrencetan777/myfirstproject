@@ -1,3 +1,5 @@
+package javaapps;
+
 class app6 {
     public static void main(String[] args) {
         String[] fname = new String[]{"bob"  , "joe" , "john" , "bob"};

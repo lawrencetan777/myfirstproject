@@ -1,3 +1,5 @@
+package javaapps;
+
 // create 2d grids
 // given n and m as the dimension of the n x m grid, it returns
 // 2d array with increasing numbers downwards and rightwards.
@@ -8,7 +10,7 @@
 //   [3 7 11] ],
 public class app9 {
     public static void main(String[] args) {
-        int[][] s = b(2,2);
+        int[][] s = b(5,4);
         
         int rows = s.length;
         int cols = s[0].length;

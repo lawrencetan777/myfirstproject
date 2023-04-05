@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=app5
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=powers
+comment2.target=int\ calcServer(java.util.List)
+comment3.params=powers\ i\ j\ sums\ prevMin
+comment3.target=int\ calc(java.util.List,\ int,\ int,\ long[],\ int)
+comment4.params=sums\ i\ j
+comment4.target=long\ getSum(long[],\ int,\ int)
+numComments=5
