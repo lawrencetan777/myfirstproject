@@ -1,4 +1,4 @@
-package javaapps;
+
 
 public class app7 {
     public static void main(String[] args){

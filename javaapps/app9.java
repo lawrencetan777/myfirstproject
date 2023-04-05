@@ -1,4 +1,4 @@
-package javaapps;
+
 
 // create 2d grids
 // given n and m as the dimension of the n x m grid, it returns
