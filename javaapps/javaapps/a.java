@@ -13,9 +13,20 @@ class a {
 
     }
 
-    static int findDistance(Graph a){
-        int d = 0;
-        return d; 
+    static int findDistance(Graph a, int x, int y){
+        int dist = 1;
+        while(a.distance[x][y] == 0){
+            
+        
+            if(a.edges[x][y] == true){
+                a.distance[x][y] = dist;
+            } else{
+            }
+
+        }
+
+           
+        return dist; 
     }
     
 
