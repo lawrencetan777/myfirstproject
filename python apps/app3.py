@@ -1,8 +1,8 @@
 
 
-shirt = {1:"t-shirt" , 2:"long sleeves" , 3:"a tuxedo",4:"a polo-shirt"}
-pants = {1:"jeans", 2:"shorts", 3:"dress pants" , 4:"sweatpants"}
-shoes = {1:"sneakers", 2:"high heels", 3:"boots" }
+shirt = {1:"t-shirt" , 2:"long sleeves" , 3:"a tuxedo",4:"a polo-shirt", 5:"swimshirt"}
+pants = {1:"jeans", 2:"shorts", 3:"dress pants" , 4:"sweatpants", 5:"pajama pants"}
+shoes = {1:"sneakers", 2:"high heels", 3:"boots" ,4:"dress shoes", 5:"no shoes" }
 import random
 def createrandomOutfit(number):
    z = 0
@@ -18,4 +18,4 @@ def createrandomOutfit(number):
 
    
 
-createrandomOutfit(1)
+createrandomOutfit(50)
