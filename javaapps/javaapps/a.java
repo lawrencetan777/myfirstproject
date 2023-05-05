@@ -2,6 +2,7 @@ package javaapps;
 
 import java.lang.Math;
 
+
 /**
  * 
  */
@@ -10,24 +11,9 @@ class a {
     public static void main(String[] args) {
         
 
-
     }
 
-    static int findDistance(Graph a, int x, int y){
-        int dist = 1;
-        while(a.distance[x][y] == 0){
-            
-        
-            if(a.edges[x][y] == true){
-                a.distance[x][y] = dist;
-            } else{
-            }
-
-        }
-
-           
-        return dist; 
-    }
+    
     
 
     // generate a random graph with n nodes and p. For any pair of vertices, p is the probabily that an edge exists.
@@ -39,24 +25,13 @@ class a {
                 double r = Math.random();
                 if(r <= p){
                     a.edges[z][x] = true;
+                    a.distance[z][x] = (int) Math.random()*51;
                 }else{
                     a.edges[z][x] = false;
                 }
             }
         }
-        for(int z = 0; z < n; z++){
-            for(int x = 0; x < n; x++){
-                while(a.distance[z][x] == 0){
-                    int dist = 0;
-                    if(a.edges[z][x] == true){
-                        a.distance[z][x] = dist;
-                    }
-
-                }
-            }
-
-            
-        }
+        
 
         return a;
     }
