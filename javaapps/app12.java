@@ -3,7 +3,7 @@ import java.util.Hashtable;
 class app12 {
 
     public static void main(String[] args) {
-        String word = "biodegradabilities"; 
+        String word = "begin"; 
         int value = findValue(word);
         System.out.println(value);
 
