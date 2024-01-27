@@ -1,4 +1,4 @@
 import turtle
 import random
-pat = turtle.Turtle()
-pat.forward(100)
+pant = turtle.Turtle()
+pant.forward(100)
