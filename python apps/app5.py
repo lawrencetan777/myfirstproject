@@ -1,5 +1,3 @@
-
-
 # find biggest family in phone book
 phone_book = [
     ["John Doe", "123456"],
@@ -13,15 +11,16 @@ phone_book = [
     ["Lion Cat", "374637"],
     ["Tiger Cat", "374637"],
     ["Leopard Cat", "374637"],
-    ["Jaguar Cat", "374637"]
+    ["Jaguar Cat", "374637"],
 ]
+
+
 def find_biggest_family(phones):
 
-    
     phoneDict = {}
-    greatestfamnum = (10^36)
+    greatestfamnum = 10 ^ 36
     greatestfamamount = -1
-    
+
     for s in phones:
         if s[1] not in phoneDict:
             phoneDict[s[1]] = []
@@ -30,7 +29,9 @@ def find_biggest_family(phones):
         if len(phoneDict[z]) > int(greatestfamamount):
             greatestfamamount = len(phoneDict[z])
             greatestfamnum = z
-        
+
     familybig = phoneDict[greatestfamnum]
     print(familybig)
+
+
 find_biggest_family(phone_book)

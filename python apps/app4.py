@@ -30,12 +30,12 @@ def central_tendency(data, type):
     sum = 0
     newdata = sortalist(data)
 
-    if (type == "mean"):
+    if type == "mean":
         for z in newdata:
             sum = sum + z
         return int(sum / len(newdata))
 
-    if (type == "mode"):
+    if type == "mode":
         possmode = 0
         amountofmode = 0
 
@@ -46,19 +46,24 @@ def central_tendency(data, type):
                 possmode = f
         return possmode
 
-    if (type == "median"):
+    if type == "median":
         median = 0
-        if (len(newdata) % 2 != 0):
+        if len(newdata) % 2 != 0:
             median = newdata[math.ceil(len(newdata) / 2)]
-        elif (len(newdata) % 2 == 0):
+        elif len(newdata) % 2 == 0:
             median = central_tendency(
-                [newdata[int((len(newdata) / 2)) - 1], newdata[int((len(newdata) / 2))]], "mean")
+                [
+                    newdata[int((len(newdata) / 2)) - 1],
+                    newdata[int((len(newdata) / 2))],
+                ],
+                "mean",
+            )
 
         return median
     else:
         return "error"
 
 
-print(central_tendency(z, "MEDIAN"))
+print(central_tendency(e, "mode"))
 
 print(e)
